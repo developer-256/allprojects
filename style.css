@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-weight: bold;
+    /* font-family: 'Permanent Marker', cursive; */
+}
+
+#allProjects {
+    padding: 2rem;
+}
+
+#allProjects ul {
+    list-style: none;
+    display: flex;
+    gap: 1px;
+    margin-bottom: 1px;
+    flex-wrap: nowrap;
+}
+
+#allProjects ul li {
+    border: 2px solid black;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#allProjects ul div {
+    display: flex;
+    gap: 1px;
+}
+
+#allProjects ul div a {
+    border: 2px solid black;
+    padding: 1rem 2rem;
+}
+
+
+#allProjects ul li:nth-child(1) {
+    width: 82px;
+}
+
+#allProjects ul li:nth-child(2) {
+    flex: 1;
+    justify-content: start;
+}
+
+
+@media (max-width: 799px) {
+    * {
+        font-size: 16px;
+    }
+
+    #allProjects {
+        padding: 0.5rem;
+    }
+}
+
+@media (max-width: 580px) {
+    * {
+        font-size: 16px;
+    }
+
+    #allProjects {
+        padding: 0.5rem;
+    }
+
+    #allProjects ul div {
+        flex-direction: column;
+    }
+
+    #allProjects ul div a {
+        font-size: 16px;
+        padding: 0.5rem 0.5rem;
+    }
+
+    #allProjects ul li {
+        padding: 0.5rem 0.5rem;
+    }
+
+    #allProjects ul li:nth-child(1) {
+        width: 45px;
+    }
+}
